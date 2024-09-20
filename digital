@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonJ Digital Library - Educational Style</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif; /* More formal font */
+            background-image: url('school_background.jpg'); /* Replace with your school image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            height: 100vh; /* Full height */
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: rgba(0, 51, 102, 0.8); /* Darker color for a formal feel */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 3px solid #d4af37; /* Golden accent */
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+        header h2 {
+            font-size: 1.5em;
+            color: #d4af37;
+            margin: 5px 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex-grow: 1; /* Allow the container to grow and fill the space */
+        }
+        .search-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #003366;
+            outline: none;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .categories .category {
+            flex: 1;
+            background-color: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin: 0 10px; /* Margin between categories */
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+        .categories .category h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #d4af37;
+        }
+        .featured-books {
+            margin-top: 20px;
+        }
+        .featured-books h2 {
+            margin-bottom: 15px;
+            font-size: 2em;
+            text-align: center;
+            color: #003366;
+        }
+        .featured-books .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .featured-books .book {
+            flex: 0 0 30%; /* Responsive book cards */
+            background-color: #f4f4f4;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .featured-books .book h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #003366;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1em;
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DonJ Digital Library</h1>
+        <h2>Don Jesus Gonzales High School</h2>
+    </header>
+
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search Google for academic resources...">
+            <button onclick="searchGoogle()">Search</button>
+        </div>
+
+        <!-- Book Categories -->
+        <div class="categories">
+            <div class="category">
+                <h3>Elementary</h3>
+                <p>Access educational resources for elementary students.</p>
+            </div>
+            <div class="category">
+                <h3>High School</h3>
+                <p>Find books and materials for high school subjects.</p>
+            </div>
+            <div class="category">
+                <h3>Senior High</h3>
+                <p>Explore resources for senior high school education.</p>
+            </div>
+        </div>
+
+        <!-- Featured Books -->
+        <div class="featured-books">
+            <h2>Featured Books</h2>
+            <div class="book-list" id="bookList">
+                <div class="book">
+                    <h4>Quantum Physics: Foundations</h4>
+                </div>
+                <div class="book">
+                    <h4>Advanced Algebra</h4>
+                </div>
+                <div class="book">
+                    <h4>World Literature Insights</h4>
+                </div>
+                <div class="book">
+                    <h4>Data Science Fundamentals</h4>
+                </div>
+                <div class="book">
+                    <h4>The History of Mathematics</h4>
+                </div>
+                <div class="book">
+                    <h4>Shakespeare's Greatest Works</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Don Jesus Gonzales High School Digital Library</p>
+    </footer>
+
+    <script>
+        // Function to redirect to Google search with the query
+        function searchGoogle() {
+            var input = document.getElementById('searchInput').value;
+            var query = encodeURIComponent(input);
+            if (query) {
+                window.open('https://www.google.com/search?q=' + query, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
