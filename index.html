@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DON JESUS GONZALES HIGH SCHOOL E-LIBRARY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="LMS.css" type="text/css">
+    <style>
+        #background {
+            background-image: url(donj.jpg);
+            background-size: cover;
+            background-position: upper;
+            height: 100vh;
+            width: 100%;
+        }
+
+        #slider #x h1 {
+            font-size: 32px; /* Adjusted font size */
+            margin: 0;
+            padding: 10px0;
+            color: white;
+        }
+
+        #slider #x p {
+            font-size: 14px;
+            margin-top: 5px;
+            color: white;
+        }
+
+        }
+        #menu1 ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        #menu1 ul a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #menu1 ul li {
+            display: inline-block;
+        }
+
+        #student input,
+        #Teacher input {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+        }
+
+        #student input[type="submit"],
+        #Teacher input[type="submit"] {
+            width: 100%;
+            height: 35px;
+            background-color: #0a0143c8;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #student a, 
+        #Teacher a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #down {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #down a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <!-- Top Section -->
+        <div id="top">
+            <a href="mailto:ellaregala23@gmail.com" class="fa fa-envelope"> ellaregala23@gmail.com</a>
+            <a href="tel:+639454657364" class="fa fa-phone"> +639454657364</a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+
+        <!-- Menu Section -->
+        <div id="menu">
+            <div id="logo">DONJ<b style="color:#f3b407;">LIBRARY</b></div>
+            <div id="menu1">
+                <ul>
+                    <a href="#"><li class="fa fa-home"> Home</li></a>
+                    <a href="#"><li class="fa fa-image"> Gallery</li></a>
+                    <a href="admin.html"><li class="fa fa-user"> Admin Login</li></a>
+                    <a href="register.html"><li class="fa fa-registered"> Register</li></a>
+                    <a href="#"><li class="fa fa-user"> Login</li></a>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <!-- Slider Section -->
+        <div id="slider">
+            <div id="x">
+                <h1>WELCOME TO DONJ<b style="color: #f3b407;">LIBRARY</b></h1>
+                <p>FOSTERING KNOWLEDGE!!</p>
+            </div>
+            <div id="y">
+                <div id="l">
+                    <h1 style="text-align: center; color: #ffffff;">STUDENT</h1>
+                    <div id="student">
+                        <label for="student-email">Email</label><br>
+                        <input id="student-email" type="email" class="t" /><br>
+                        <label for="student-password">Password</label><br>
+                        <input id="student-password" type="password" class="t" /><br>
+                        <label for="student-lrn">LRN</label><br>
+                        <input id="student-lrn" type="text" class="t" /><br>
+                        <input type="submit" value="SAVE" />
+                        <a href="#" style="text-decoration: none;"><p>Forgot Password?</p></a>
+                    </div>
+                </div>
+            </div>
+            <div id="z">
+                <div id="r">
+                    <h1 style="text-align: center; color: white;">TEACHER</h1>
+                    <div id="Teacher">
+                        <label for="teacher-email">Email</label><br>
+                        <input id="teacher-email" type="email" class="t" /><br>
+                        <label for="teacher-password">Password</label><br>
+                        <input id="teacher-password" type="password" class="t" /><br>
+                        <input type="submit" value="SAVE" />
+                        <a href="#" style="text-decoration: none;"><p>Forgot Password?</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div id="down">
+            <h3>Stay Connected</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <h2>Contact Address</h2>
+            <p><i class="fa fa-home"></i> Mexico, Pampanga</p>
+            <p><i class="fa fa-phone"></i> +91-7317</p>
+            <p><i class="fa fa-envelope"></i> ellaregala23@gmail.com</p>
+        </div>
+        <div class="footer">
+            Developed By: Carmela Regala, Shaina Santos, Joshua De Castro, and Ralph Louise Alvarez
+        </div>
+    </div>
+</body>
+</html>
